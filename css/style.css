@@ -1,0 +1,305 @@
+/* Geral */
+:root{
+    --rosa: hsl(322, 100%, 66%);
+    --azulzao: hsl(192, 100%, 9%);
+    --azulzin: hsl(207, 100%, 98%);
+    --cinzinha: rgb(63, 62, 62);
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+}
+/* Topo */
+.topo{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.topo__logo{
+    width: 120px;
+    height: 20px;
+    align-self: center;
+}
+.topo__botao{
+    font-size: 1rem;
+    color: var(--rosa);
+    background: none;
+    border: 1px solid var(--rosa);
+    border-radius: 50px;
+    padding: 3px 15px;
+}
+/* Apresentação */
+.apresentacao{
+    padding-top: 125px;
+    width: 95%;
+    margin:0 auto;
+}
+.apresentacao__titulo{
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+.apresentacao__texto{
+    color: var(--cinzinha);
+    padding:30px 0;
+}
+.apresentacao__botao{
+    border-radius: 50px;
+    background-color: var(--rosa);
+    box-shadow: 0px 5px 11px -7px rgba(0,0,0,0.75);
+    padding:13px 40px;
+    margin-bottom: 100px;
+    font-weight: bold;
+}
+.apresentacao__img{
+    width: 310px;
+    margin-bottom: 50px;
+}
+/*Dados da rede*/
+.dados{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.dados__bloco{
+    margin: 40px auto;
+    width: 165px;
+    display: flex;
+    flex-direction: column;
+}
+.dados__bloco__img{
+    width: 35px;
+    align-self: flex-start;
+}
+.dados__bloco__titulo{
+    color: black;
+    font-size: 4rem;
+}
+.medium{
+    font-size: 3.5rem;
+}
+.dados__bloco__texto{
+    color: rgb(121, 121, 121);
+}
+/* Bloco ilustracoes geral*/
+.ilustracoes{
+    display: flex;
+    flex-direction: column;
+}
+/*Crescer junto*/
+.crescerjunto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.crescerjunto__fundo--topo{
+    height: 112px;
+}
+.crescerjunto__texto{
+    display: grid;
+    grid-template-areas: 'img'
+                         'titulo'
+                         'texto' ;
+    background-color: var(--azulzin);
+}
+.crescerjunto__texto__img{
+    grid-area: img;
+    margin:0 auto;
+    padding:80px 0;
+    width: 75%
+}
+.crescerjunto__texto__titulo{
+    color: black;
+    grid-area: titulo;
+    font-family: 'Poppins', sans-serif;
+}
+.crescerjunto__texto__paragrafo{
+    color: black;
+    grid-area: texto;
+    width: 90%;
+    margin: 25px auto 50px auto;
+    font-size: 1rem;
+}
+/* Conversas fluidas */
+.conversasfluidas{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.conversasfluidas__texto{
+    display: grid;
+    grid-template-areas: 'img'
+                         'titulo'
+                         'texto' ;
+}
+.conversasfluidas__texto__img{
+    grid-area: img;
+    margin:0 auto;
+    padding:80px 0;
+    width: 75%
+}
+.conversasfluidas__texto__titulo{
+    color: black;
+    grid-area: titulo;
+    font-family: 'Poppins', sans-serif;
+}
+.conversasfluidas__texto__paragrafo{
+    color: black;
+    grid-area: texto;
+    width: 90%;
+    margin: 25px auto 50px auto;
+    font-size: 1rem;
+}
+/* Usuarios */
+.usuarios{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.usuarios__fundo--topo{
+    height: 103px;
+}
+.usuarios__texto{
+    display: grid;
+    grid-template-areas: 'img'
+                         'titulo'
+                         'texto' ;
+    background-color: var(--azulzin);
+}
+.usuarios__texto__img{
+    grid-area: img;
+    margin:0 auto;
+    padding:80px 0;
+    width: 75%
+}
+.usuarios__texto__titulo{
+    color: black;
+    grid-area: titulo;
+    font-family: 'Poppins', sans-serif;
+}
+.usuarios__texto__paragrafo{
+    color: black;
+    grid-area: texto;
+    width: 90%;
+    margin: 25px auto 50px auto;
+    font-size: 1rem;
+}
+/* Começe agora */
+.comeceagora{
+    width: 70%;
+    margin:0 auto;
+}
+.comeceagora__titulo{
+    color: black;
+    margin: 50px 0 30px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.comeceagora__botao{
+    margin-bottom: 200px;
+    padding: 14px 50px;
+    border-radius: 50px;
+    box-shadow: 0px 5px 11px -7px rgba(0,0,0,0.75);
+    background-color: var(--rosa);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+/* Rodapé geral */
+.rodape{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.icon{
+    width: 45px;
+    height: 20px;
+    padding-right: 20px;
+}
+/* Newsletter */
+.newsletter{
+    background-color: var(--azulzao);
+}
+.newsletter__titulo{
+    margin: 25px 0 10px 25px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+.newsletter__texto{
+    margin: 25px 0 10px 25px;
+    width: 80%;
+    text-align: justify;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.newsletter__form{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.newsletter__form__caixa{
+    width: 100%;
+    padding:15px;
+    border-radius: 10px;
+    margin: 15px auto;
+}
+.newsletter__form__botao{
+    align-self: flex-end;
+    border-radius: 5px;
+    padding: 13px 35px;
+    background-color: var(--rosa);
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+/* Informações */
+.info{
+    background-color: var(--azulzao);
+}
+.info__logo{
+    padding: 125px 80px 20px 0;
+}
+.info__texto{
+    padding:0 50px 0 25px;
+    text-align: justify;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+.info__contato{
+    padding: 25px 25px;
+    background-color: var(--azulzao);
+}
+.info__contato__celular{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.info__contato__email{
+    display: flex;
+    align-items: center;
+}
+.info__redes{
+    display: flex;
+    background-color: var(--azulzao);
+}
+.info__redes__icon{
+    margin:0 0 25px 25px;
+    width: 32px;
+    height: 32px;
+}
+/* Desafio */
+.desafio{
+    background-color: red;
+}
+/* Topo font-family: 'Poppins', sans-serif;*/
