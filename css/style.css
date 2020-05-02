@@ -1,3 +1,4 @@
+/* Mobile Version*/
 /* Geral */
 :root{
     --rosa: hsl(322, 100%, 66%);
@@ -63,7 +64,8 @@ body{
     font-weight: bold;
 }
 .apresentacao__img{
-    width: 310px;
+    width: 100%;
+    max-width: 780px;
     margin-bottom: 50px;
 }
 /*Dados da rede*/
@@ -98,6 +100,12 @@ body{
 .ilustracoes{
     display: flex;
     flex-direction: column;
+}
+.topo--desktop{
+    display: none;
+}
+.final--desktop{
+    display: none;
 }
 /*Crescer junto*/
 .crescerjunto{
@@ -221,6 +229,10 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+.rodape__geral{
+    display: flex;
+    flex-direction: column;
 }
 .icon{
     width: 45px;
